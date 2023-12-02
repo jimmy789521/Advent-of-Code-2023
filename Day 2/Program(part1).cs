@@ -24,9 +24,9 @@ namespace Advent_of_Code_2023
             {
                 if (value.Length > 1)
                 {
-                    if (Char.IsNumber(value[value.Length - 2])) //This condition check at the same time if the value is for a red amount of cubes and if it's a two digits amount
+                    if (Char.IsNumber(value[value.Length - 2])) //This condition checks at the same time if the value is for a red amount of cubes and if it's a two digits amount
                     {
-                        if (Int32.Parse(value.Substring(Math.Max(0, value.Length - 2))) > 12) //Comparison with the max amount of red cubes
+                        if (Int32.Parse(value.Substring(value.Length - 2)) > 12) //Comparison with the max amount of red cubes
                         {
                             return 0;
                         }
@@ -38,9 +38,9 @@ namespace Advent_of_Code_2023
             {
                 if (value.Length > 1)
                 {
-                    if (Char.IsNumber(value[value.Length - 2])) //This condition check at the same time if the value is for a green amount of cubes and if it's a two digits amount
+                    if (Char.IsNumber(value[value.Length - 2])) //This condition checks at the same time if the value is for a green amount of cubes and if it's a two digits amount
                     {
-                        if (Int32.Parse(value.Substring(Math.Max(0, value.Length - 2))) > 13) //Comparison with the max amount of green cubes
+                        if (Int32.Parse(value.Substring(value.Length - 2)) > 13) //Comparison with the max amount of green cubes
                         {
                             return 0;
                         }
@@ -52,7 +52,7 @@ namespace Advent_of_Code_2023
             {
                 if (value.Length > 1)
                 {
-                    if (Char.IsNumber(value[value.Length - 2])) //This condition check at the same time if the value is for a blue amount of cubes and if it's a two digits amount
+                    if (Char.IsNumber(value[value.Length - 2])) //This condition checks at the same time if the value is for a blue amount of cubes and if it's a two digits amount
                     {
                         if (Int32.Parse(value.Substring(value.Length - 2)) > 14) //Comparison with the max amount of blue cubes
                         {
